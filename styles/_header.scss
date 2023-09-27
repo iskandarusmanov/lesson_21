@@ -1,0 +1,82 @@
+.header__nav {
+    margin: 0 auto;
+    width: 1110px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    gap: 16px;
+
+    .logo__title {
+        color: #173A56;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+}
+
+.header__menu {
+    display: flex;
+    gap: 24px;
+}
+
+.nav__menu {
+    .nav__item {
+        text-decoration: none;
+        color: #22343D;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+    }
+}
+
+.header__btn {
+    cursor: pointer;
+    padding: 10px 24px;
+    color: #173A56;
+    background-color: transparent;
+    border: 1px solid rgba(188, 208, 229, 1);
+    border-radius: 4px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.header__btn:hover {
+    color: #FFF;
+    background-color: #02897A;
+}
+
+.header__menu__icon{
+    display: none;
+}
+
+
+
+
+//google
+@media screen and (max-width: 412px) {
+
+    .header__nav{
+        width: 410px;
+        height: 70px;
+        padding: 0 32px;
+        box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+   .header__menu{
+    display: none;
+   }
+   .header__menu__icon{
+    display: block;
+   }
+}
